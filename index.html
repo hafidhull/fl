@@ -5,15 +5,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="description"
-    content="Flip Book Interaktif Belajar Membaca untuk siswa SD — Suku Kata & Kata Sederhana dengan audio" />
+    content="Flip Book Interaktif Belajar Membaca untuk siswa SD â€” Suku Kata & Kata Sederhana dengan audio" />
   <title>Flip Book Belajar Membaca</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
   <style>
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        RESET & BASE
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     *,
     *::before,
     *::after {
@@ -36,9 +36,9 @@
       -webkit-user-select: none;
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        ANIMATED BACKGROUND
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     body::before {
       content: "";
       position: fixed;
@@ -73,22 +73,22 @@
       }
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        APP LAYOUT
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .app {
       height: 100%;
       display: grid;
       grid-template-rows: auto 1fr auto;
       gap: 0;
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 0 auto;
       padding: 8px 12px;
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        HEADER / TOP BAR
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .topbar {
       display: flex;
       justify-content: space-between;
@@ -119,9 +119,9 @@
       font-size: 1.2em;
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        CONTROLS
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .controls {
       display: flex;
       gap: 6px;
@@ -190,9 +190,9 @@
       text-align: center;
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        BOOK CONTAINER
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .book-stage {
       position: relative;
       display: flex;
@@ -206,21 +206,21 @@
     .book {
       position: relative;
       width: 100%;
-      max-width: 580px;
+      max-width: 1200px;
       aspect-ratio: 3 / 4;
-      max-height: calc(100vh - 140px);
-      border-radius: 18px;
+      max-height: calc(100vh - 80px);
+      border-radius: 20px;
       box-shadow:
-        0 20px 60px rgba(0, 0, 0, .15),
-        0 8px 25px rgba(0, 0, 0, .1),
+        0 22px 70px rgba(0, 0, 0, .15),
+        0 10px 30px rgba(0, 0, 0, .1),
         inset 0 0 0 1px rgba(255, 255, 255, .3);
       overflow: hidden;
       background: #8fa;
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        PAGE LAYERS
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .page {
       position: absolute;
       inset: 0;
@@ -299,9 +299,9 @@
       background: linear-gradient(to left, rgba(0, 0, 0, .12) 0%, transparent 60%);
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        AUDIO OVERLAY BUTTONS
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .audio-overlay {
       position: absolute;
       inset: 0;
@@ -406,9 +406,9 @@
       }
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        BOTTOM BAR / PAGE DOTS
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .bottombar {
       display: flex;
       justify-content: center;
@@ -448,9 +448,9 @@
       box-shadow: 0 2px 8px rgba(124, 58, 237, .3);
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        PAGE ENTRANCE ANIMATION
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .page-enter {
       animation: pageEnter 400ms ease-out;
     }
@@ -467,9 +467,9 @@
       }
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        FULLSCREEN STYLES
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .app.fullscreen .topbar,
     .app.fullscreen .bottombar {
       position: fixed;
@@ -488,9 +488,9 @@
       bottom: 8px;
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        RESPONSIVE
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     @media (max-width: 500px) {
       .app {
         padding: 4px 6px;
@@ -542,14 +542,14 @@
 
     @media (min-width: 768px) and (orientation: landscape) {
       .book {
-        max-height: calc(100vh - 150px);
-        max-width: 480px;
+        max-height: calc(100vh - 100px);
+        max-width: 800px;
       }
     }
 
-    /* ═══════════════════════════════
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        REDUCED MOTION
-       ═══════════════════════════════ */
+       â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     @media (prefers-reduced-motion: reduce) {
 
       .page-flip.animating,
@@ -618,7 +618,7 @@
   <main class="app" id="app">
     <!-- TOP BAR -->
     <header class="topbar">
-      <div class="title"><span class="title-icon">📘</span> Flip Book Belajar Membaca</div>
+      <div class="title"><span class="title-icon">ðŸ“˜</span> Flip Book Belajar Membaca</div>
       <div class="controls">
         <button class="btn btn-icon" id="btnPrev" type="button" aria-label="Halaman sebelumnya" disabled>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
@@ -626,7 +626,7 @@
             <polyline points="15 18 9 12 15 6" />
           </svg>
         </button>
-        <div class="page-indicator" id="pageIndicator">1 / 24</div>
+        <div class="page-indicator" id="pageIndicator">1 / 45</div>
         <button class="btn btn-icon" id="btnNext" type="button" aria-label="Halaman berikutnya">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
             stroke-linejoin="round">
@@ -663,210 +663,166 @@
   </main>
 
   <script>
-    // ════════════════════════════════════════════════
-    // PAGE DATA — 24 halaman dengan mapping audio
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+    // PAGE DATA â€” 24 halaman dengan mapping audio
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // Setiap tombol audio didefinisikan dengan posisi (%) relatif terhadap gambar
     // x, y = center position (%), w, h = ukuran area klik (%)
-    const PAGES = [
-      // ── Halaman 1: Cover ──
+        const PAGES = [
       { img: '1.png', audio: [] },
-
-      // ── Halaman 2: Mari Bernyanyi - Alfabet ──
       { img: '2.png', audio: [] },
-
-      // ── Halaman 3: Vokal + ba ca da ──
-      {
-        img: '3.png', audio: [
+      { img: '3.png', audio: [{ label: 'a i u e o', file: 'a i u e o.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '4.png', audio: [
           { label: 'ba', file: 'ba.mp3', x: 50, y: 77, w: 30, h: 6 },
           { label: 'ca', file: 'ca.mp3', x: 50, y: 84, w: 30, h: 6 },
-          { label: 'da', file: 'da.mp3', x: 50, y: 91, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 4: da da da ──
-      {
-        img: '4.png', audio: [
-          { label: 'ba', file: 'ba.mp3', x: 50, y: 77, w: 30, h: 6 },
-          { label: 'ca', file: 'ca.mp3', x: 50, y: 84, w: 30, h: 6 },
-          { label: 'da', file: 'da.mp3', x: 50, y: 91, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 5: sa ──
-      {
-        img: '5.png', audio: [
-          { label: 'ca', file: 'ca.mp3', x: 50, y: 77, w: 30, h: 6 },
-          { label: 'da', file: 'da.mp3', x: 50, y: 84, w: 30, h: 6 },
-          { label: 'sa', file: 'sa.mp3', x: 50, y: 91, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 6: ma ──
-      {
-        img: '6.png', audio: [
-          { label: 'da', file: 'da.mp3', x: 50, y: 77, w: 30, h: 6 },
-          { label: 'sa', file: 'sa.mp3', x: 50, y: 84, w: 30, h: 6 },
-          { label: 'ma', file: 'ma.mp3', x: 50, y: 91, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 7: ya ──
-      {
-        img: '7.png', audio: [
-          { label: 'sa', file: 'sa.mp3', x: 50, y: 77, w: 30, h: 6 },
-          { label: 'ma', file: 'ma.mp3', x: 50, y: 84, w: 30, h: 6 },
-          { label: 'ya', file: 'ya.mp3', x: 50, y: 91, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 8: vokal i — 6 tombol ──
-      {
-        img: '8.png', audio: [
+          { label: 'da', file: 'da.mp3', x: 50, y: 91, w: 30, h: 6 }
+        ] },
+      { img: '5.png', audio: [
+          { label: 'da1', file: 'da.mp3', x: 50, y: 77, w: 30, h: 6 },
+          { label: 'da2', file: 'da.mp3', x: 50, y: 84, w: 30, h: 6 },
+          { label: 'da3', file: 'da.mp3', x: 50, y: 91, w: 30, h: 6 }
+        ] },
+      { img: '6.png', audio: [
+          { label: 'sa1', file: 'sa.mp3', x: 50, y: 77, w: 30, h: 6 },
+          { label: 'sa2', file: 'sa.mp3', x: 50, y: 84, w: 30, h: 6 },
+          { label: 'sa3', file: 'sa.mp3', x: 50, y: 91, w: 30, h: 6 }
+        ] },
+      { img: '7.png', audio: [
+          { label: 'ma1', file: 'ma.mp3', x: 50, y: 77, w: 30, h: 6 },
+          { label: 'ma2', file: 'ma.mp3', x: 50, y: 84, w: 30, h: 6 },
+          { label: 'ma3', file: 'ma.mp3', x: 50, y: 91, w: 30, h: 6 }
+        ] },
+      { img: '8.png', audio: [
+          { label: 'ya1', file: 'ya.mp3', x: 50, y: 77, w: 30, h: 6 },
+          { label: 'ya2', file: 'ya.mp3', x: 50, y: 84, w: 30, h: 6 },
+          { label: 'ya3', file: 'ya.mp3', x: 50, y: 91, w: 30, h: 6 }
+        ] },
+      { img: '9.png', audio: [
           { label: 'bi', file: 'bi.mp3', x: 46, y: 77, w: 24, h: 6 },
           { label: 'ci', file: 'ci.mp3', x: 46, y: 84, w: 24, h: 6 },
           { label: 'di', file: 'di.mp3', x: 46, y: 91, w: 24, h: 6 },
           { label: 'si', file: 'si.mp3', x: 78, y: 77, w: 24, h: 6 },
           { label: 'mi', file: 'mi.mp3', x: 78, y: 84, w: 24, h: 6 },
-          { label: 'yi', file: 'yi.mp3', x: 78, y: 91, w: 24, h: 6 },
-        ]
-      },
-
-      // ── Halaman 9: vokal u — 6 tombol ──
-      {
-        img: '9.png', audio: [
-          { label: 'bi', file: 'bi.mp3', x: 46, y: 77, w: 24, h: 6 },
-          { label: 'ci', file: 'ci.mp3', x: 46, y: 84, w: 24, h: 6 },
-          { label: 'di', file: 'di.mp3', x: 46, y: 91, w: 24, h: 6 },
-          { label: 'si', file: 'si.mp3', x: 78, y: 77, w: 24, h: 6 },
-          { label: 'mi', file: 'mi.mp3', x: 78, y: 84, w: 24, h: 6 },
-          { label: 'yi', file: 'yi.mp3', x: 78, y: 91, w: 24, h: 6 },
-        ]
-      },
-
-      // ── Halaman 10: na ni nu ──
-      {
-        img: '10.png', audio: [
+          { label: 'yi', file: 'yi.mp3', x: 78, y: 91, w: 24, h: 6 }
+        ] },
+      { img: '10.png', audio: [] },
+      { img: '11.png', audio: [
           { label: 'na', file: 'na.mp3', x: 50, y: 79, w: 30, h: 6 },
           { label: 'ni', file: 'ni.mp3', x: 50, y: 86, w: 30, h: 6 },
-          { label: 'nu', file: 'nu.mp3', x: 50, y: 93, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 11: ka ki ku ──
-      {
-        img: '11.png', audio: [
+          { label: 'nu', file: 'nu.mp3', x: 50, y: 93, w: 30, h: 6 }
+        ] },
+      { img: '12.png', audio: [
           { label: 'ka', file: 'ka.mp3', x: 50, y: 79, w: 30, h: 6 },
           { label: 'ki', file: 'ki.mp3', x: 50, y: 86, w: 30, h: 6 },
-          { label: 'ku', file: 'ku.mp3', x: 50, y: 93, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 12: pa pi pu ──
-      {
-        img: '12.png', audio: [
+          { label: 'ku', file: 'ku.mp3', x: 50, y: 93, w: 30, h: 6 }
+        ] },
+      { img: '13.png', audio: [
           { label: 'pa', file: 'pa.mp3', x: 50, y: 79, w: 30, h: 6 },
           { label: 'pi', file: 'pi.mp3', x: 50, y: 86, w: 30, h: 6 },
-          { label: 'pu', file: 'pu.mp3', x: 50, y: 93, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 13: pa pi pu (duplikat) ──
-      {
-        img: '13.png', audio: [
+          { label: 'pu', file: 'pu.mp3', x: 50, y: 93, w: 30, h: 6 }
+        ] },
+      { img: '14.png', audio: [
           { label: 'pa', file: 'pa.mp3', x: 50, y: 79, w: 30, h: 6 },
           { label: 'pi', file: 'pi.mp3', x: 50, y: 86, w: 30, h: 6 },
-          { label: 'pu', file: 'pu.mp3', x: 50, y: 93, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 14: la li lu ──
-      {
-        img: '14.png', audio: [
+          { label: 'pu', file: 'pu.mp3', x: 50, y: 93, w: 30, h: 6 }
+        ] },
+      { img: '15.png', audio: [
           { label: 'la', file: 'la.mp3', x: 50, y: 79, w: 30, h: 6 },
           { label: 'li', file: 'li.mp3', x: 50, y: 86, w: 30, h: 6 },
-          { label: 'lu', file: 'lu.mp3', x: 50, y: 93, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 15: ta ti tu ──
-      {
-        img: '15.png', audio: [
+          { label: 'lu', file: 'lu.mp3', x: 50, y: 93, w: 30, h: 6 }
+        ] },
+      { img: '16.png', audio: [
           { label: 'ta', file: 'ta.mp3', x: 50, y: 79, w: 30, h: 6 },
           { label: 'ti', file: 'ti.mp3', x: 50, y: 86, w: 30, h: 6 },
-          { label: 'tu', file: 'tu.mp3', x: 50, y: 93, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 16: ra ri ru ──
-      {
-        img: '16.png', audio: [
+          { label: 'tu', file: 'tu.mp3', x: 50, y: 93, w: 30, h: 6 }
+        ] },
+      { img: '17.png', audio: [
           { label: 'ra', file: 'ra.mp3', x: 50, y: 79, w: 30, h: 6 },
           { label: 'ri', file: 'ri.mp3', x: 50, y: 86, w: 30, h: 6 },
-          { label: 'ru', file: 'ru.mp3', x: 50, y: 93, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 17: ra ri ru (duplikat) ──
-      {
-        img: '17.png', audio: [
+          { label: 'ru', file: 'ru.mp3', x: 50, y: 93, w: 30, h: 6 }
+        ] },
+      { img: '18.png', audio: [
           { label: 'ra', file: 'ra.mp3', x: 50, y: 79, w: 30, h: 6 },
           { label: 'ri', file: 'ri.mp3', x: 50, y: 86, w: 30, h: 6 },
-          { label: 'ru', file: 'ru.mp3', x: 50, y: 93, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 18: ha hi hu ──
-      {
-        img: '18.png', audio: [
+          { label: 'ru', file: 'ru.mp3', x: 50, y: 93, w: 30, h: 6 }
+        ] },
+      { img: '19.png', audio: [
           { label: 'ha', file: 'ha.mp3', x: 50, y: 79, w: 30, h: 6 },
           { label: 'hi', file: 'hi.mp3', x: 50, y: 86, w: 30, h: 6 },
-          { label: 'hu', file: 'hu.mp3', x: 50, y: 93, w: 30, h: 6 },
-        ]
-      },
-
-      // ── Halaman 19: Cerita "Sepeda Baru Banu" ──
-      {
-        img: '19.png', audio: [
+          { label: 'hu', file: 'hu.mp3', x: 50, y: 93, w: 30, h: 6 }
+        ] },
+      { img: '20.png', audio: [] },
+      { img: '21.png', audio: [] },
+      { img: '22.png', audio: [{ label: 'ba', file: 'ba.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '23.png', audio: [{ label: 'bi', file: 'bi.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '24.png', audio: [{ label: 'banu', file: 'bamu.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '25.png', audio: [{ label: 'buku', file: 'buku.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '26.png', audio: [{ label: 'batu', file: 'batu.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '27.png', audio: [{ label: 'baju', file: 'baju.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '28.png', audio: [{ label: 'bola', file: 'bola.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '29.png', audio: [{ label: 'guru', file: 'guru.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '30.png', audio: [{ label: 'ibu', file: 'ibu.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '31.png', audio: [{ label: 'ida', file: 'ida.mp3', x: 50, y: 50, w: 40, h: 40 }] },
+      { img: '32.png', audio: [
           { label: 'sepeda', file: 'sepeda.mp3', x: 52, y: 68, w: 35, h: 12 },
-          { label: 'banu', file: 'bamu.mp3', x: 52, y: 85, w: 35, h: 12 },
-        ]
-      },
-
-      // ── Halaman 20: Cerita "Banu Coba Sepeda" ──
-      {
-        img: '20.png', audio: [
+          { label: 'banu', file: 'bamu.mp3', x: 52, y: 85, w: 35, h: 12 }
+        ] },
+      { img: '33.png', audio: [
           { label: 'sepeda', file: 'sepeda.mp3', x: 52, y: 68, w: 35, h: 12 },
-          { label: 'banu', file: 'bamu.mp3', x: 52, y: 85, w: 35, h: 12 },
-        ]
-      },
-
-      // ── Halaman 21: Cerita lanjutan ──
-      {
-        img: '21.png', audio: [
+          { label: 'banu', file: 'bamu.mp3', x: 52, y: 85, w: 35, h: 12 }
+        ] },
+      { img: '34.png', audio: [
           { label: 'roda', file: 'roda.mp3', x: 52, y: 68, w: 35, h: 12 },
-          { label: 'banu', file: 'bamu.mp3', x: 52, y: 85, w: 35, h: 12 },
-        ]
-      },
-
-      // ── Halaman 22: "Banu Hati-Hati" ──
-      {
-        img: '22.png', audio: [
+          { label: 'banu', file: 'bamu.mp3', x: 52, y: 85, w: 35, h: 12 }
+        ] },
+      { img: '35.png', audio: [
           { label: 'roda', file: 'roda.mp3', x: 52, y: 65, w: 35, h: 12 },
-          { label: 'topi biru', file: 'topi biru.mp3', x: 52, y: 83, w: 35, h: 12 },
-        ]
-      },
-
-      // ── Halaman 23: Profil Pengembangan ──
-      { img: '23.png', audio: [] },
-
-      // ── Halaman 24: Sumber Referensi ──
-      { img: '24.png', audio: [] },
+          { label: 'topi biru', file: 'topi biru.mp3', x: 52, y: 83, w: 35, h: 12 }
+        ] },
+      { img: '36.png', audio: [
+          { label: 'ibu', file: 'ibu.mp3', x: 52, y: 60, w: 35, h: 12 },
+          { label: 'guru', file: 'guru.mp3', x: 52, y: 75, w: 35, h: 12 },
+          { label: 'rumah', file: 'rumah.mp3', x: 52, y: 90, w: 35, h: 12 }
+        ] },
+      { img: '37.png', audio: [
+          { label: 'ibu', file: 'ibu.mp3', x: 52, y: 65, w: 35, h: 12 },
+          { label: 'guru', file: 'guru.mp3', x: 52, y: 83, w: 35, h: 12 }
+        ] },
+      { img: '38.png', audio: [
+          { label: 'ibu', file: 'ibu.mp3', x: 52, y: 65, w: 35, h: 12 },
+          { label: 'guru', file: 'guru.mp3', x: 52, y: 83, w: 35, h: 12 }
+        ] },
+      { img: '39.png', audio: [
+          { label: 'Pasangkanlah', file: 'Pasangkanlah.mp3', x: 50, y: 15, w: 30, h: 10 },
+          { label: 'roda', file: 'roda.mp3', x: 50, y: 30, w: 30, h: 10 },
+          { label: 'sepeda', file: 'sepeda.mp3', x: 50, y: 45, w: 30, h: 10 },
+          { label: 'sepatu', file: 'sepatu.mp3', x: 50, y: 60, w: 30, h: 10 },
+          { label: 'topi biru', file: 'topi biru.mp3', x: 50, y: 75, w: 30, h: 10 }
+        ] },
+      { img: '40.png', audio: [
+          { label: 'Pasangkanlah', file: 'Pasangkanlah.mp3', x: 50, y: 15, w: 30, h: 10 },
+          { label: 'baju', file: 'baju.mp3', x: 50, y: 30, w: 30, h: 10 },
+          { label: 'buku', file: 'buku.mp3', x: 50, y: 45, w: 30, h: 10 },
+          { label: 'sepatu', file: 'sepatu.mp3', x: 50, y: 60, w: 30, h: 10 },
+          { label: 'guru', file: 'guru.mp3', x: 50, y: 75, w: 30, h: 10 }
+        ] },
+      { img: '41.png', audio: [
+          { label: 'hore', file: 'hore kamu hebat yu bermain lagi besok.mp3', x: 50, y: 50, w: 40, h: 20 }
+        ] },
+      { img: '42.png', audio: [
+          { label: 'rapihkan', file: 'Rapihkan kembali mainan mu.mp3', x: 50, y: 50, w: 40, h: 20 }
+        ] },
+      { img: '43.png', audio: [
+          { label: 'simpanlah', file: 'Simpan lah di tempat semula.mp3', x: 50, y: 50, w: 40, h: 20 }
+        ] },
+      { img: '44.png', audio: [] },
+      { img: '45.png', audio: [] }
     ];
 
-    // ════════════════════════════════════════════════
+
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // AUDIO ENGINE
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     const audioEl = new Audio();
     audioEl.preload = 'auto';
     let currentPlayingBtn = null;
@@ -880,6 +836,9 @@
     }
 
     function playAudio(btn, file) {
+      // Jangan izinkan suara dimainkan saat animasi flip berjalan
+      if (isAnimating) return;
+
       stopAudio();
       currentPlayingBtn = btn;
       btn.classList.add('playing');
@@ -912,9 +871,9 @@
       });
     }
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // DOM REFERENCES
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     const pageCurrent = document.getElementById('pageCurrent');
     const pageNext = document.getElementById('pageNext');
     const flipShadow = document.getElementById('flipShadow');
@@ -930,9 +889,9 @@
     let isAnimating = false;
     const TOTAL = PAGES.length;
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // RENDER PAGE
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function renderPage(container, pageIndex, animate = false) {
       const data = PAGES[pageIndex];
       if (!data) return;
@@ -970,9 +929,9 @@
       });
     }
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // NAVIGATION
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function updateControls() {
       btnPrev.disabled = currentPage <= 0;
       btnNext.disabled = currentPage >= TOTAL - 1;
@@ -1075,9 +1034,9 @@
       goToPage(currentPage - 1, 'backward');
     }
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // PAGE DOTS
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function buildDots() {
       let html = '';
       for (let i = 0; i < TOTAL; i++) {
@@ -1094,9 +1053,9 @@
       });
     }
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // KEYBOARD NAVIGATION
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     document.addEventListener('keydown', (e) => {
       if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
         e.preventDefault();
@@ -1115,9 +1074,9 @@
       }
     });
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // TOUCH / SWIPE
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     let touchStartX = 0;
     let touchStartY = 0;
     let touchStartTime = 0;
@@ -1136,8 +1095,8 @@
 
       // Only count as swipe if horizontal movement > 40px and more horizontal than vertical
       if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) && dt < 500) {
-        if (dx < 0) nextPage();   // swipe left → next
-        else prevPage();          // swipe right → prev
+        if (dx < 0) nextPage();   // swipe left â†’ next
+        else prevPage();          // swipe right â†’ prev
       }
     }, { passive: true });
 
@@ -1154,15 +1113,15 @@
       else if (x > third * 2) nextPage();
     });
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // BUTTON HANDLERS
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     btnNext.addEventListener('click', nextPage);
     btnPrev.addEventListener('click', prevPage);
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // FULLSCREEN
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function toggleFullscreen() {
       if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen().catch(() => { });
@@ -1176,9 +1135,9 @@
       app.classList.toggle('fullscreen', !!document.fullscreenElement);
     });
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // PRELOAD IMAGES
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function preloadImages() {
       return Promise.all(
         PAGES.map(p => new Promise((resolve) => {
@@ -1190,9 +1149,9 @@
       );
     }
 
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     // INITIALIZE
-    // ════════════════════════════════════════════════
+    // â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     function init() {
       buildDots();
       renderPage(pageCurrent, 0, true);
